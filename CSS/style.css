@@ -1,0 +1,123 @@
+/* Gradient background */
+body, .btn-primary_add {
+background: #59CDE9 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0A2A88, #59CDE9) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0A2A88, #59CDE9) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn-primary_add{
+    font-size: 18px;
+}
+
+/* Card effect container */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title styling */
+h3 {
+  font-weight: 600;
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 25px;
+}
+
+/* Input styling */
+.form_control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.form_control:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.4);
+}
+
+/* Add button styling */
+#addBtn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styling */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.table tbody tr {
+  transition: 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f4ff;
+  transform: scale(1.01);
+}
+
+/* Edit button */
+.edit-btn {
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #ffc107;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Delete button */
+.delete-btn {
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Totals row */
+tfoot tr:first-child {
+  background-color: #e8f0ff;
+  font-weight: 600;
+}
+
+/* Balance row */
+tfoot tr:last-child {
+  background-color: #d4edda;
+  font-size: 18px;
+  font-weight: bold;
+  color: #155724;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
