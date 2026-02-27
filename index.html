@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Statement Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="bg-light p-4">
+
+<div class="container">
+  <h3 class="mb-4">Dynamic Statement Manager</h3>
+
+  <!-- Input Row -->
+  <div class="row g-2 mb-3">
+    <div class="col-md-3">
+      <input type="date" id="date" class="form-control form_control p-4">
+    </div>
+    <div class="col-md-3">
+      <input type="text" id="header" class="form-control form_control p-4 " placeholder="Transaction Type">
+    </div>
+    <div class="col-md-2">
+      <input type="number" id="credit" class="form-control form_control p-4" placeholder="Credit">
+    </div>
+    <div class="col-md-2">
+      <input type="number" id="debit" class="form-control form_control p-4" placeholder="Debit">
+    </div>
+    <div class="col-md-2">
+      <button id="addBtn" class="btn btn-primary_add w-100 text-white p-4">Add</button>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <table class="table table-bordered text-center">
+    <thead class="table-warning">
+      <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Header</th>
+        <th>Credit</th>
+        <th>Debit</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total</th>
+        <th id="totalCredit">0</th>
+        <th id="totalDebit">0</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th colspan="3">Balance</th>
+        <th colspan="3" id="balance">0</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<script src="JS/index.js"></script>
+</body>
+</html>
