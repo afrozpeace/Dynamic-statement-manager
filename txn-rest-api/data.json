@@ -1,4 +1,12 @@
 {
-  "txns": [],
+  "txns": [
+    {
+      "txnDate": "2026-03-24",
+      "header": "ss",
+      "txnType": "CREDIT",
+      "amount": 2,
+      "id": "29ee"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
